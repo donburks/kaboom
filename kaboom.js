@@ -1,5 +1,5 @@
 $(function() {
-  var total = 10000;
+  var total = 300000;
 
   function updateTimer() {
     var clock = utils.clockString(total);
