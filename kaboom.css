@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000 url('bg.jpg') top left repeat-x;
+  padding-top: 75px;
+}
+
+main {
+  height: 500px;
+  margin: auto;
+  text-align: center;
+  color: #eee;
+}
+
+main h2 {
+  padding: 15px 0;
+  font-size: 60px;
+}
+
+main p {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+#timer {
+  font-family: monospace;
+  font-size: 128px;
+  color: red;
+  line-height: 300px;
+}
+
+#kaboom {
+  font-size: 144px;
+  text-decoration: blink;
+  color: black;
+  width: 75%;
+  margin: 0 auto;
+  line-height: 500px;
+  text-align: center;
+}
+
+#boom {
+  display: inline-block;
+  transition: all 0.25s linear;
+}
+
+#boom.broken {
+  transform: rotate(45deg);
+  padding-top: 250px;
+}
