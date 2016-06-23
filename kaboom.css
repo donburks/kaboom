@@ -54,3 +54,44 @@ main p {
   transform: rotate(45deg);
   padding-top: 250px;
 }
+
+#instructions {
+  width: 66%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#instructions #one {
+  display: block;
+}
+
+#instructions article {
+  display: none;
+}
+
+#instructions h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+#instructions h3 {
+  font-size: 32px;
+  text-align: center;
+}
+
+#instructions a {
+  padding: 15px 30px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  margin: 25px 45%;
+  width: 180px;
+}
+
+#instructions p {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}

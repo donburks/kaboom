@@ -4,14 +4,41 @@
     <title>Defuse the Bomb!</title>
     <link href="kaboom.css" rel="stylesheet">
     <script src="utils.js"></script>
-    <script src="kaboom.js"></script>
   </head>
   <body>
     <main>
-      <img src="lhl-logo.png" width="500" alt="Lighthouse Labs"><br>
-      <h2>Defuse the bomb!</h2>
-      <p>Before the timer runs out<br>Figure out how to stop the code<br>From triggering the explosion!</p>
-      <section id="timer">5:00</section>
+      <img src="lhl-logo.png" width="300" alt="Lighthouse Labs"><br>
+      <section id="instructions">
+        <article id="one">
+          <h2>Welcome to the Coding Challenge!</h2>
+          <p>Today, you are going to have to take two simple lessons that we will give you, and use that knowledge to change the code to defuse a bomb that threatens to explode! The city is counting on you, so make your efforts count! Continue reading below for a few simple lessons on how a computer understands code. These lessons will give you all the information you need to solve this challenge.</p>
+          <a href="#two" class="panel">Next</a>
+        </article>
+        <article id="two">
+          <h3>How a Web Page is Assembled</h3> 
+          <p>A web page consists of two main parts: a <strong>head</strong> and a <strong>body</strong>. The body is the content, it is what shows up on the screen. The head, however, is where the configuration for the page is stored. The browser uses the <strong>head</strong> section to get its instructions for <em>HOW</em> that content should be displayed. This can include the CSS (Cascading Style Sheets) which tell the browser about the appearance of the text. It can also include <strong>scripts</strong> that will run code on a page. You can always recognize these in a webpage's code because they look like this: <code>&lgt;script src=&quot;filename.js&quot;&gt;&lt;/script&gt;</code>. This points to another file which will contain code that runs on the webpage to give it its extra functionality.</p>
+          <a href="#one" class="panel">Prev</a>
+          <a href="#three" class="panel">Next</a>
+        </article>
+        <article id="three">
+          <h3>Logic</h3>
+          <p>A computer runs by making a series of logical decisions, much like a human does. A human might say, &quot;If it is raining, use your umbrella.&quot; Where a computer will say, &quot;<code>If the value stored in x is equal to 10, output 'Ten'</code>&quot;</p>
+          <p>Study the code that is included in the webpage, and see if you can figure out where an <code>if</code> statement is testing some logical condition which would make the bomb explode.</p>
+          <p><strong>Tip: </strong> You can stop any line of code from running by putting <code>//</code> in front of the line. That comments it out and tells the computer to ignore it.</p>
+          <a href="#two" class="panel">Prev</a>
+          <a href="bomb.html">Start Challenge</a>
+        </article>
+      </section>
     </main>
+    <script>
+      $(function() {
+        $("article a.panel").on('click', function(evt) {
+          evt.preventDefault();
+          var which = $(this).attr('href');
+          $("article").hide();
+          $(which).show();
+        });
+      });
+    </script>
   </body>
 </html>
