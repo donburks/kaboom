@@ -95,3 +95,14 @@ main p {
   line-height: 20px;
   margin-bottom: 15px;
 }
+
+#three strong {
+  font-size: 1.2em;
+}
+
+#three hr {
+  color: white;
+  background-color: white;
+  margin-bottom: 15px;
+  height: 3px;
+}
